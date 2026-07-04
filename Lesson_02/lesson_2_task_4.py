@@ -10,5 +10,4 @@ def fizz_buzz(n):
             print(i)
 
 
-n = int(input("Число: "))
-fizz_buzz(n)
+fizz_buzz(17)
