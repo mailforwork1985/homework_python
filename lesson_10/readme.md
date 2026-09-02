@@ -10,8 +10,7 @@ lesson_10/
 ├── pages/
 │   └── shop_page.py        # Page Object: MainShopPage и CartPage
 ├── tests/
-│   └── test_sauce_shop.py  # Тест с Allure-шагами и декораторами
-├── conftest.py             # Фикстура WebDriver (Firefox)
+│   └── test_shop.py  # Тест с Allure-шагами и декораторами
 ├── requirements.txt        # Зависимости
 └── readme.md
 ```
@@ -24,7 +23,6 @@ lesson_10/
 
    ```bash
    python -m venv .venv
-   source .venv/bin/activate   # Linux/macOS
    .venv\Scripts\activate      # Windows
    ```
 
@@ -42,13 +40,13 @@ lesson_10/
 ### Обычный запуск
 
 ```bash
-pytest tests/test_sauce_shop.py
+pytest tests/test_shop.py
 ```
 
 ### Запуск с формированием Allure-отчёта
 
 ```bash
-pytest tests/test_sauce_shop.py --alluredir=allure-results
+pytest tests/test_shop.py --alluredir=allure-results
 ```
 
 После выполнения в папке `allure-results/` появятся файлы с результатами.
